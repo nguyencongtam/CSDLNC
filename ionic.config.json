@@ -2,5 +2,6 @@
   "name": "CSDLNC",
   "integrations": {},
   "type": "angular",
-  "id": "e0f4970b"
+  "id": "e0f4970b",
+  "root": "./CSDLNC"
 }
