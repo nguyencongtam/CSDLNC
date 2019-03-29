@@ -1,7 +1,8 @@
 {
-  "name": "CSDLNC",
-  "integrations": {},
+  "name": "csdlnc",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
-  "id": "e0f4970b",
-  "root": "./CSDLNC"
+  "id": "e0f4970b"
 }

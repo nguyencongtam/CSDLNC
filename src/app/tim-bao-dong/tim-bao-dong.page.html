@@ -1,9 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>tim-bao-dong</ion-title>
+    <ion-title>Tìm bao đóng</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <form action="" [formGroup]="formPTH">
+    <ion-item>
+      <ion-label position="stacked">Nhập tất cả phần tử của lược đồ</ion-label>
+      <ion-input formControlName="item"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Tập PTH của lược đồ</ion-label>
+      <ion-input formControlName="PTH"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="stacked">Nhập bao đóng của tập thuộc tính</ion-label>
+        <ion-input formControlName="baoDong"></ion-input>
+      </ion-item>
+    <div class="button-action">
+      <ion-button (click)="result()" color="primary">Kết quả</ion-button>
+    </div>
+  </form>
+  <div class="result" *ngFor="let item of KQ">
+    {{item.baodong}} {{item.KQbaodong}}
+  </div>
 
 </ion-content>
